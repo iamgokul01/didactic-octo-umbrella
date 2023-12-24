@@ -1,0 +1,43 @@
+/* Write your CSS here */
+
+.money-details-flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container-1 {
+  display: flex;
+  align-items: center;
+
+  background-color: #ecfccb;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #84cc16;
+  width: clamp(300px, 30%, 500px);
+}
+
+.card-container-2 {
+  display: flex;
+  align-items: center;
+
+  background-color: #cffafe;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #06b6d4;
+  width: clamp(300px, 30%, 500px);
+}
+.card-container-3 {
+  display: flex;
+  align-items: center;
+
+  background-color: #ede9fe;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #7c3aed;
+  width: clamp(300px, 30%, 500px);
+}
+
+.money-trans-img {
+  padding: 15px;
+  width: 150px;
+}
