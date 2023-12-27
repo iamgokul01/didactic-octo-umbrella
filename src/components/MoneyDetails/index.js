@@ -5,7 +5,10 @@ import './index.css'
 class MoneyDetails extends Component {
   render() {
     const {activites} = this.props
-    const {balance, income, expenses} = activites
+    const {income, expenses} = activites
+    let {balance} = activites
+
+    balance = income - expenses
     return (
       <div className="money-details-flexbox">
         <div className="card-container-1">
@@ -16,7 +19,7 @@ class MoneyDetails extends Component {
           />
           <div className="money-live-details">
             <p>Your Balance</p>
-            <h1>{`Rs ${balance}`}</h1>
+            <h1 data-testid="balanceAmount">Rs {balance}</h1>
           </div>
         </div>
         <div className="card-container-2">
@@ -27,7 +30,7 @@ class MoneyDetails extends Component {
           />
           <div className="money-live-details">
             <p>Your Income</p>
-            <h1>{`Rs ${income}`}</h1>
+            <h1 data-testid="incomeAmount">Rs {income}</h1>
           </div>
         </div>
         <div className="card-container-3">
@@ -38,7 +41,7 @@ class MoneyDetails extends Component {
           />
           <div className="money-live-details">
             <p>Your Expenses</p>
-            <h1>{`Rs ${expenses}`}</h1>
+            <h1 data-testid="expensesAmount">Rs {expenses}</h1>
           </div>
         </div>
       </div>

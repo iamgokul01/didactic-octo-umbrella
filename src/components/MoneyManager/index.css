@@ -98,15 +98,21 @@
   justify-content: space-around;
   width: 80%;
   border: 1px solid #7e858e;
+  margin: 0px;
 }
 
 .title,
 .amount,
 .type {
-  flex: 1;
+  flex: 1/4;
 }
 
 .table-flexbox {
   display: flex;
   flex-direction: column;
+}
+
+.trans-table-items {
+  border: 1px solid red;
+  width: 80%;
 }
