@@ -19,29 +19,29 @@ class MoneyDetails extends Component {
           />
           <div className="money-live-details">
             <p>Your Balance</p>
-            <h1 data-testid="balanceAmount">Rs {balance}</h1>
+            <p data-testid="balanceAmount">Rs {balance}</p>
           </div>
         </div>
         <div className="card-container-2">
           <img
             src="https://assets.ccbp.in/frontend/react-js/money-manager/income-image.png"
-            alt="balance"
+            alt="income"
             className="money-trans-img"
           />
           <div className="money-live-details">
             <p>Your Income</p>
-            <h1 data-testid="incomeAmount">Rs {income}</h1>
+            <p data-testid="incomeAmount">Rs {income}</p>
           </div>
         </div>
         <div className="card-container-3">
           <img
             src="https://assets.ccbp.in/frontend/react-js/money-manager/expenses-image.png"
-            alt="balance"
+            alt="expenses"
             className="money-trans-img"
           />
           <div className="money-live-details">
             <p>Your Expenses</p>
-            <h1 data-testid="expensesAmount">Rs {expenses}</h1>
+            <p data-testid="expensesAmount">Rs {expenses}</p>
           </div>
         </div>
       </div>
